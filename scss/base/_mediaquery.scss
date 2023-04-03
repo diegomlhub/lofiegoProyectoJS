@@ -1,0 +1,182 @@
+/*-----MEDIA QUERY------*/
+@media screen and (max-width:1020px) {
+    .grid-container{
+        grid-template-columns: repeat(2,1fr);        
+        grid-template-areas: 
+        "header header"        
+        "main main"
+        "footer footer"
+        ;    
+    }    
+
+    .index-carrusel div{
+        width: 675px;                 
+    }
+
+    .index-videos{
+        flex-direction: column;
+    }
+
+    .productos div{        
+        flex-direction: column;
+    }
+
+    .servicios-hero img{
+        width: 500px;           
+    }    
+
+}
+
+@media screen and (max-width:680px) {       
+    .section-h1{
+        height: 80px;
+    }
+    
+    .encabezado{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;        
+    }
+
+    .index-bienvenidos div{
+        margin-left: 30px;
+        margin-right: 30px;    
+    }
+
+    .index-bienvenidos div p{
+        text-align: left;
+    }
+
+    .index-carrusel div{
+        width: 490px;                 
+    }
+
+    .index-hero {
+        height: 40vh;
+    }
+
+    .empresa-parrafos{
+        @include margins(20px, 20px, 20px, 80px);
+    }
+
+    .index-servicios-productos div{    
+        margin-left: 30px;
+        margin-right: 30px;    
+    }
+
+    .index-servicios-productos div p{
+        text-align: left;
+    }
+
+    .empresa-parrafos-div{
+        flex-direction: column;
+        align-items: center;        
+    }
+
+    .empresa-parrafos-div h2{
+        text-align: center;
+        font-size: 24px;
+        margin: 5px;
+        width: 150px;        
+    }
+
+    .empresa-parrafos-div div{
+        margin: 5px;
+    }
+    
+    .productos-hero{
+        margin: 10px;
+    }
+    
+    .servicios-hero img{        
+        width: 400px;            
+    }
+
+    .servicios-parrafos{  
+        @include margins(20px, 20px, 20px, 80px);           
+    }
+
+    .servicios-parrafos h2{    
+        margin: 30px;     
+    }
+
+    .servicios-parrafos div{    
+        margin-left: 30px;
+        margin-right: 30px;    
+    }
+
+    .servicios-parrafos div p{
+        text-align: left;
+    }
+}
+
+@media screen and (max-width:500px) {
+    
+    .section-h1{
+        height: 100px;
+    }
+
+    .index-bienvenidos{
+        margin-left: 20px;
+        margin-right: 20px;    
+    }
+
+    .index-bienvenidos div{
+        margin-left: 5px;
+        margin-right: 5px;    
+    }
+    
+    .index-carrusel div{
+        width: 340px;                 
+    }
+    
+    .index-hero {
+        height: 30vh;
+    }
+
+    .index-servicios-productos{    
+        margin: 10px;    
+    }
+
+    .index-servicios-productos h2{    
+        margin-left: 20px;
+        margin-right: 20px;    
+    }    
+    
+    .index-videos{
+        scale: 80%;
+    }
+    
+    .contacto-ubicacion{
+        scale: 70%;
+    }
+
+    .servicios-hero img{    
+        width: 300px;
+    }
+
+    .servicios-parrafos h2{    
+        margin: 10px;     
+    }
+
+    .servicios-parrafos div{    
+        margin: 10px;        
+    }
+    
+}
+
+@media screen and (max-width: 350px){
+    .grid-container{
+        grid-template-columns: repeat 1fr;                        
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer"
+        ;
+    }
+
+    .servicios-hero img{    
+        width: 250px;
+    }
+    
+}

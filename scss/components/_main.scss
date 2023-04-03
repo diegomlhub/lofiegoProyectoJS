@@ -1,0 +1,233 @@
+/*-----MAIN------*/
+/*-----TITULOS------*/
+.section-h1{
+    background-color: $color-principal;
+    height: 60px;
+    @include flex2(flex, center, center);
+    margin: 2px;
+    h1{
+        font-family: $fuente-principal;
+        color: floralwhite;
+        font-weight: bold;
+        text-align: center;
+        font-size: 30px;
+        margin: 10px;
+    }
+}
+
+/*-----INDEX------*/
+.index-bienvenidos{
+    @include flex1(flex, column);    
+    @include margins(50px, 50px, 20px, 20px);
+    h2{
+        font-family: $fuente-principal;
+        font-weight: bold;
+        text-align: center;
+        font-size: 28px;
+        margin: 20px;
+    }
+    div{
+        @include flex1(flex, column);
+        border-bottom: 1px solid #dfdfdf;
+        @include margins(50px, 50px, 20px, 20px);        
+        p{
+            font-family:$fuente-principal;    
+            text-align: justify;
+            text-indent: 30px;
+            font-size: 18px;
+            margin: 10px;
+        }
+    }
+}
+
+.index-carrusel{
+    @include flex2(flex, center, center);
+    margin: 40px;
+    div{
+        width: 800px;        
+    }
+}
+
+.index-hero{        
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.502), rgba(52, 156, 99, 0.678)), url("../img/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;    
+    width: 100%;
+    height: 50vh;          
+}
+
+.index-servicios-productos{
+    @include margins(50px, 50px, 20px, 10px);
+    h2{
+        font-family:$fuente-principal;
+        font-weight: bold;
+        text-align: left;        
+        font-size: 24px;
+        @include margins(100px, 100px, 10px, 10px);        
+    }
+    div{
+        @include flex1(flex, column);
+        border-bottom: 1px solid #dfdfdf;
+        @include margins(50px, 50px, 20px, 20px);        
+        p{
+            font-family:$fuente-principal;   
+            text-align:justify;
+            text-indent: 30px;
+            font-size: 18px;
+            margin: 10px;
+        }
+    }
+}
+
+.index-videos{
+    @include flex2(flex, center, center);
+    article{
+        margin: 10px;        
+    }
+}
+
+/*-----EMPRESA------*/
+.empresa-parrafos{
+    @include flex1(flex, column);       
+    margin: 100px; 
+    .empresa-parrafos-div{
+        display: flex;     
+        border-bottom: 1px solid #dfdfdf;    
+        margin: 20px;
+        h2{
+            font-family: $fuente-principal;
+            font-size: 32px;
+            margin: 10px;
+            width: 250px;
+        }
+        div{
+            @include flex1(flex, column);
+            margin-left: 30px;
+            width: 100%;
+            p{
+                font-family: $fuente-principal;
+                text-indent: 30px;    
+                font-size: 18px;
+
+            }
+        }
+    }
+}
+
+/*-----PRODUCTOS------*/
+.productos-hero{
+    @include flex1(flex, column);
+    border-bottom: 1px solid #dfdfdf;
+    @include margins(100px, 100px, 20px, 20px);    
+    div{
+        p{
+            font-family: $fuente-principal;    
+            text-indent: 30px;    
+            font-size: 18px;
+            margin: 10px;
+        }
+    }
+}
+
+.productos{
+    div{
+        @include flex2(flex, space-evenly, center);
+        div{
+            @include flex1(flex, column);
+            text-align: center;
+            width: 300px;
+            height: 380px;    
+            margin: 20px;
+            border: 1px solid gray;
+            transition: 0.5s;
+            &:hover{
+                transform: scale(1.05);
+            }
+            img{
+                width: 300px;
+                height: 300px;
+                padding: 5px;
+            }
+            h2{
+                font-family: $fuente-principal;
+                font-weight: bold;  
+                font-size: 20px;  
+                margin: 10px;                 
+            }
+            a{
+                text-decoration: none;
+                color: rgb(255, 255, 255);
+                background-color: $color-principal;
+                font-family: $fuente-principal;
+                font-weight: bold;
+                font-size: 14px; 
+                padding: 5px;
+            }
+        }
+    }
+}
+
+/*-----SERVICIOS------*/
+.servicios-hero{
+    @include flex2(flex, center, center);
+    @include margins(50px, 50px, 30px, 30px);
+    img{
+        margin: 30px;
+        width: 700px;
+    }    
+}
+
+.servicios-parrafos{
+    margin: 100px;
+    @include margins(100px, 100px, 10px, 100px);
+    h2{
+        font-family: $fuente-principal;
+        font-weight: bold;
+        text-align: left;
+        font-size: 24px;
+        @include margins(50px, 50px, 10px, 10px);                
+    }
+    div{
+        @include flex1(flex, column);
+        border-bottom: 1px solid #dfdfdf;
+        @include margins(50px, 50px, 20px, 20px);        
+        p{
+            font-family: $fuente-principal;   
+            text-align: justify;
+            text-indent: 30px;
+            font-size: 18px;
+            margin: 10px;
+        }
+    }
+}
+
+/*-----CONTACTO------*/
+.contacto-consulta{    
+    @include flex2(flex, center, center);
+    margin: 30px; 
+    form{
+        width: 500px;
+        div{
+            label{
+                font-family: $fuente-principal;
+            }
+            button {
+                font-family: $fuente-principal;
+            };
+        }
+    }
+}
+.contacto-ubicacion{
+    @include flex1(flex, column);    
+    align-items: center;
+    @include margins(100px, 100px, 50px, 80px);
+    h2{
+        font-family: $fuente-principal;
+        font-weight: bold;
+        text-align: center;
+        font-size: 24px;
+        margin: 15px;
+    }    
+}

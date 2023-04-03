@@ -1,0 +1,20 @@
+/*-----FOOTER------*/
+.pie{
+    @include flex1(flex, column);          
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    border-top: 1px solid #dfdfdf; 
+    text-align: right;
+    div{        
+        a{
+            img{
+                width: 40px;
+                height: 40px;
+                margin: 5px;
+            }
+        }
+    }
+}

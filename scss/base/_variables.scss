@@ -1,0 +1,22 @@
+/*-----VARIABLES------*/
+$color-principal: rgb(52, 156, 99);
+$fuente-principal: 'Montserrat', sans-serif;
+
+/*-----MIXINNS------*/
+@mixin flex1($flex, $direction){
+    display: $flex;
+    flex-direction: $direction;
+}
+
+@mixin flex2($flex, $justify, $align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin margins($left, $right, $top, $botton){
+    margin-left: $left;
+    margin-right: $right;
+    margin-top: $top;
+    margin-bottom: $botton;
+}

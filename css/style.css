@@ -1,0 +1,455 @@
+/*-----RESET------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;        
+}
+
+/*-----GRIDS (INDEX Y PRODUCTOS) -----*/
+.grid-container{        
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto auto 100px;
+    grid-template-areas: 
+    "header header header"    
+    "main main main"
+    "footer footer footer"
+    ;
+}
+
+.encabezado{
+    grid-area: header;
+}
+
+.contenido{
+    grid-area: main;    
+}
+
+.pie{
+    grid-area: footer;    
+}
+
+/*-----HEADER------*/
+
+.encabezado{
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 2px 7px -3px rgba(0,0,0,0.67);
+    -webkit-box-shadow: 0px 2px 7px -3px rgba(0,0,0,0.67);
+    -moz-box-shadow: 0px 2px 7px -3px rgba(0,0,0,0.67);
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 100%);  
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+.encabezado nav div a img{
+    width: 180px;
+    height: 90px;
+    margin: 10px;   
+}
+
+.encabezado nav div div ul li a{        
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 10px;
+}
+
+/*-----MAIN------*/
+
+.section-h1{
+    background-color: rgb(52, 156, 99);
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+}
+
+h1{
+    font-family:sans-serif;
+    color: floralwhite;
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    margin: 10px;    
+}
+
+.index-bienvenidos{
+    display: flex;
+    flex-direction: column;
+}
+
+.index-bienvenidos h2{
+    font-family:sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 28px;
+    margin: 20px;
+}
+
+.index-bienvenidos div{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #dfdfdf;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.index-bienvenidos div p{
+    font-family:sans-serif;    
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 18px;
+    margin: 10px;    
+}
+
+.index-hero{
+    display: flex;    
+    justify-content: center;    
+    align-items: center;
+    margin: 40px;
+}
+
+.index-hero img{
+    width: 950px;
+}
+
+.index-servicios-productos h2{
+    font-family:sans-serif;
+    font-weight: bold;
+    text-align: left;
+    font-size: 24px;
+    margin-left: 100px;    
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.index-servicios-productos div{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #dfdfdf;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.index-servicios-productos div p{
+    font-family:sans-serif;   
+    text-align:justify;
+    text-indent: 30px;
+    font-size: 18px;
+    margin: 10px;
+}
+
+.index-videos{
+    display: flex;    
+    justify-content: center;    
+    align-items: center;
+}
+
+.index-videos article{
+    margin: 10px;
+}
+
+.empresa-parrafos{
+    display: flex; 
+    flex-direction: column;       
+    margin: 100px;    
+}
+
+.empresa-parrafos-div{
+    display: flex;     
+    border-bottom: 1px solid #dfdfdf;    
+    margin: 20px;
+}
+
+.empresa-parrafos-div h2{
+    font-size: 32px;
+    margin: 10px;
+    width: 250px;        
+}
+
+.empresa-parrafos-div div{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    width: 100%;
+}
+
+.empresa-parrafos-div div p{
+    font-family: sans-serif;
+    text-indent: 30px;    
+    font-size: 18px;
+}
+
+.productos-hero{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #dfdfdf;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.productos-hero div p{
+    font-family: sans-serif;    
+    text-indent: 30px;    
+    font-size: 18px;
+    margin: 10px;    
+}
+
+.productos div{
+    display: flex;    
+    justify-content: space-evenly;    
+    align-items: center;    
+}
+
+.productos div div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 300px;
+    height: 380px;    
+    margin: 20px;
+    border: 1px solid gray;
+    transition: 0.5s;    
+}
+
+.productos div div:hover{
+    transform: scale(1.05);
+}
+
+.productos div div img{
+    width: 300px;
+    height: 300px;
+    padding: 5px;
+}
+
+.productos div div h2{
+    font-family:sans-serif;
+    font-weight:bold;  
+    font-size: 20px;  
+    margin: 10px;
+}
+
+.productos div div a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(52, 156, 99);
+    font-family:sans-serif;
+    font-weight:bold;
+    font-size: 14px; 
+    padding: 5px;
+}
+
+.servicios-carrusel{    
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 30px;
+    margin-bottom: 30px;    
+}
+
+.servicios-parrafos h2{
+    font-family:sans-serif;
+    font-weight: bold;
+    text-align: left;
+    font-size: 24px;
+    margin-left: 100px;    
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.servicios-parrafos div{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #dfdfdf;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.servicios-parrafos div p{
+    font-family:sans-serif;   
+    text-align:justify;
+    text-indent: 30px;
+    font-size: 18px;
+    margin: 10px;
+}
+
+.contacto-consulta{ 
+    display: flex;
+    justify-content: center;
+    margin: 30px;    
+}
+
+.contacto-consulta form{ 
+   width: 500px;    
+}
+
+.contacto-ubicacion{
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+}
+
+.contacto-ubicacion h2{    
+    font-family:sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 24px;
+    margin: 15px;
+}
+
+/*-----FOOTER------*/
+
+.pie div{
+    display: flex;
+    justify-content: right;    
+    align-items: center;
+    margin: 15px;    
+}
+.pie div a img{
+    width: 50px;
+    height: 50px;
+    margin: 5px;    
+}
+
+/*-----MEDIA QUERY------*/
+
+@media screen and (max-width:1020px) {
+    .grid-container{
+        grid-template-columns: repeat(2,1fr);        
+        grid-template-areas: 
+        "header header"        
+        "main main"
+        "footer footer"
+        ;    
+    }    
+
+    .index-hero img{
+        scale: 70%;
+    }
+
+    .index-videos{
+        flex-direction: column;
+    }
+
+    .productos div{        
+        flex-direction: column;
+    }
+
+    .servicios-carrusel{    
+        margin-left: 200px;
+        margin-right: 200px;    
+    }
+
+}
+
+@media screen and (max-width:680px) {       
+    .section-h1{
+        height: 80px;
+    }
+    
+    .encabezado{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;        
+    }
+
+    .index-servicios-productos div{    
+        margin-left: 30px;
+        margin-right: 30px;    
+    }
+
+    .index-bienvenidos div{
+        margin-left: 30px;
+        margin-right: 30px;    
+    }
+
+    .index-hero img{
+        width: 500px;
+    }
+
+    .empresa-parrafos{
+        margin: 10px;
+    }
+
+    .empresa-parrafos-div{
+        flex-direction: column;
+        align-items: center;        
+    }
+
+    .empresa-parrafos-div h2{
+        text-align: center;
+        font-size: 24px;
+        margin: 5px;
+        width: 150px;        
+    }
+
+    .empresa-parrafos-div div{
+        margin: 5px;
+    }
+    
+    .productos-hero{
+        margin: 10px;
+    }
+    
+    .servicios-carrusel{    
+        margin-left: 100px;
+        margin-right: 100px;    
+    }
+
+    .servicios-parrafos h2{    
+        margin-left: 30px;     
+    }
+
+    .servicios-parrafos div{    
+        margin-left: 30px;
+        margin-right: 30px;    
+    }
+}
+
+@media screen and (max-width:500px) {
+    
+    .section-h1{
+        height: 100px;
+    }
+    
+    .index-videos{
+        scale: 80%;
+    }
+    
+    .contacto-ubicacion{
+        scale: 70%;
+    }
+
+    .servicios-carrusel{    
+        margin-left: 50px;
+        margin-right: 50px;    
+    }
+}
+
+@media screen and (max-width: 350px){
+    .grid-container{
+        grid-template-columns: repeat 1fr;                        
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer"
+        ;
+    }
+
+    .servicios-carrusel{    
+        margin-left: 10px;
+        margin-right: 10px;    
+    }
+    
+}
