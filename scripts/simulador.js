@@ -1,13 +1,13 @@
 // <-- variables -->
-let precioLista = 0;
+let precioLista;
 const descuentoContado = 0.15; //porcentaje /100
-let precioFinal = 0;
-let precioCuotas = 0;
+let precioFinal;
+let precioCuotas;
 const validezPresupuesto = 5; //dias
-let fechaValidez = 0;
+let fechaValidez;
 let producto;
 const fechaActual = new Date();
-let numeroProducto = 0;
+let numeroProducto;
 
 // <-- funciones -->
 function ingresoProducto(){
@@ -22,7 +22,7 @@ function ingresoProducto(){
 
 function validarProducto(numeroProducto){
     if (numeroProducto < 1 || numeroProducto > 6){
-        console.log("El producto seleccionado no esta en la lista, ingrese nuevamente el producto: \n");               
+        alert("El producto seleccionado no esta en la lista, ingrese nuevamente el producto: \n");               
         return false;
     }
     else{
@@ -79,35 +79,36 @@ function calcularPresupuesto(nProducto) {
             precioFinal = precioLista - (precioLista * descuentoContado);
             fechaValidez = fechaActual.getDate() + validezPresupuesto;
             break;
-    }    
-    
+    }       
 }
   
 function mostrarPresupuesto() {
-    console.log(
-      "Presupuesto de " + producto + ": \n" +
-      "\n" +
-      "Precio de lista: " + "$" + precioLista.toFixed(2).toString() + ".- \n" + 
-      "6 cuotas sin interés de: $" +  precioCuotas.toFixed(2).toString() + ".- \n" +
-      "\n" +
-      "Precio final de contado (dto 15%): "+ precioFinal.toFixed(2).toString() + ".- \n" +
-      "\n" +
-      "Validéz de presupuesto hasta el: " + fechaValidez.toString() + "/" + fechaActual.getMonth().toString() + "/" + fechaActual.getFullYear().toString() + "."
-      );
+    alert(
+        "Presupuesto de " + producto + ": \n" +
+        "\n" +
+        "Precio de lista: " + "$" + precioLista.toFixed(2).toString() + ".- \n" +
+        "6 cuotas sin interés de: $" + precioCuotas.toFixed(2).toString() + ".- \n" +
+        "\n" +
+        "Precio final de contado (dto 15%): " + precioFinal.toFixed(2).toString() + ".- \n" +
+        "\n" +
+        "Validéz de presupuesto hasta el: " + fechaValidez.toString() + "/" + fechaActual.getMonth().toString() + "/" + fechaActual.getFullYear().toString() + "."
+    );
 }
 
 // <-- codigo -->
 // <-- ingreso producto a presupuestar a través del promt-->
 ingresoProducto();
-
 // <-- dependiendo el numero solicitado realizo validacion del valor ingresado y el calculo del precio final -->
-if (validarProducto(numeroProducto)){
-    calcularPresupuesto(numeroProducto);
-    mostrarPresupuesto();
-}
-else{
-    ingresoProducto();
-}
-  
 
-  
+while (true){
+    if(validarProducto(numeroProducto)){
+        calcularPresupuesto(numeroProducto);
+        mostrarPresupuesto();
+        ingresoProducto();
+    }
+    else{
+        ingresoProducto();
+    }    
+}
+
+
