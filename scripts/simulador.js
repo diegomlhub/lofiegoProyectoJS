@@ -8,6 +8,7 @@ let fechaValidez;
 let producto;
 const fechaActual = new Date();
 let numeroProducto;
+let respuesta = "SI";
 
 // <-- funciones -->
 function ingresoProducto(){
@@ -97,18 +98,20 @@ function mostrarPresupuesto() {
 
 // <-- codigo -->
 // <-- ingreso producto a presupuestar a través del promt-->
-ingresoProducto();
 // <-- dependiendo el numero solicitado realizo validacion del valor ingresado y el calculo del precio final -->
 
-while (true){
+do{    
+    ingresoProducto();
+    //Condicion para salvar el ingreso de NaN
+    if(isNaN(numeroProducto)){
+        numeroProducto = 0; 
+    }   
     if(validarProducto(numeroProducto)){
         calcularPresupuesto(numeroProducto);
-        mostrarPresupuesto();
-        ingresoProducto();
+        mostrarPresupuesto();                
     }
-    else{
-        ingresoProducto();
-    }    
+    respuesta = prompt("¿Quiere realizar otro presupuesto? SI/NO")
 }
+while (respuesta.toUpperCase() !== "NO")
 
 
