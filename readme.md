@@ -1,10 +1,12 @@
 <h1 align="center">Hi 👋, I'm Diego</h1>
 <h3 align="center">Proyecto Javascript Coderhouse</h3>
-<p align="left">Primer Pre entrega - Simulador de calculo de presupuestos de productos</p>
-<p align="left">Ingreso de datos por promt y salida de datos por alert. Calculo descuentos con pago de contado y calculos de cuotas con precio de lista.</p>
+<p align="left">Segunda Pre entrega - Simulador de calculo de presupuestos de productos</p>
+<p align="left">Ingreso de datos por promt y salida de datos por alert.</p>
 
-<h3 align="center">Comentarios sobre esta pre entrega</h3>
-<p align="left">Tuve inconvenientes en cuanto a la ejecucion de los alert, ya que el sitio web que realice en el curso de desarrollo web, al tener bootstrap, js, carrusel y links, hacia que los alert no aparezcan y aparecian unos seg y se iban. Loque realice fue comentar gran parte el HTML y asi poder hacer el simulador como lo queria realizar.</p>
+<p align="left"> Calculo descuentos con pago de contado y calculos de cuotas con precio de lista.</p>
+
+<p align="left">Para realizar el presupuesto, seleccionamos el producto de la lista ingresando el número del índice. Luego nos preguntará si deseamos ingresar otro produnto al presupeusto, respondemos SI o NO. Una vez que ingresamos los productos que necesitamos, al responder NO, nos mostrará el presupuesto.</p>
+<p align="left">Por último podemos realizar otro presuesto si lo deseamos.</p>
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
