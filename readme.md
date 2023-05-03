@@ -1,12 +1,13 @@
 <h1 align="center">Hi 👋, I'm Diego</h1>
-<h3 align="center">Proyecto Javascript Coderhouse</h3>
-<p align="left">Segunda Pre entrega - Simulador de calculo de presupuestos de productos</p>
-<p align="left">Ingreso de datos por promt y salida de datos por alert.</p>
+<h2 align="center">Proyecto Javascript Coderhouse</h2>
+<h3 align="left">Tercer Pre entrega - Simulador de calculo de presupuestos de productos</h3>
 
+<p align="left">Interacción con con el usuario a traves de DOM.</p>
 <p align="left"> Calculo descuentos con pago de contado y calculos de cuotas con precio de lista.</p>
 
-<p align="left">Para realizar el presupuesto, seleccionamos el producto de la lista ingresando el número del índice. Luego nos preguntará si deseamos ingresar otro produnto al presupeusto, respondemos SI o NO. Una vez que ingresamos los productos que necesitamos, al responder NO, nos mostrará el presupuesto.</p>
-<p align="left">Por último podemos realizar otro presuesto si lo deseamos.</p>
+<p align="left">Para ingresar al presupuestador, debemos ir al seccion "Productos" y alli encontraremos el link del presupuestador.</p>
+
+<p align="left">Para realizar el presupuesto, seleccionamos el producto de la lista desplegable, luego en el siguiente input ingresamos la cantidad. Hacemos click en agregar, veremos abajo la informacion y detalle de costo, descuentos y pagos del presupuesto en el html. Podemos ingresar otro producto y se va a sumar al presupuesto actual y tambien si se desea se puede elimnar el presupuesto completo haciendo click en "Eliminar Presupuesto".</p>
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
