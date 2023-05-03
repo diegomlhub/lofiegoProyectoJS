@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--!KEYWORD-->
-    <meta name="keywords" content="ingenieria, electronica, desarrollo, fabricaion, automatizacion, industria, automotriz, inyectores, batea, ultrasonido, scaner, cartel, led, señalizacion, totem, vialidad, reparacion, reparaciones">
+    <meta name="keywords" content="ingenieria, electronica, desarrollo, fabricaion, automatizacion, industria, automotriz, inyectores, batea, ultrasonido, scaner, cartel, led, señalizacion, totem, vialidad">
     <!--!DESCRIPTION-->
     <meta name="description" content="Empresa tecnológica que ofrece productos de diseño y desarrollo electrónico propio, como así también servicios de ingeniería para terceros. Desarrollos de cartelería led textos pasantes y desarrollo electronico automatriz">  
     <!--!FAVICON-->
@@ -18,9 +17,8 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!--CSS-->
     <link rel="stylesheet" href="../css/estilos.css">
-    <title>Der Ingeniería</title>
+    <title>Der Ingeniería</title>    
 </head>
-
 <body>
     <header class="encabezado">
         <nav class="navbar navbar-expand-lg navbar-light">
@@ -52,43 +50,47 @@
     </header>
     <main>
         <section class="section-h1">            
-            <h1>Servicios</h1>
+            <h1>Presupuesto de productos:</h1>
         </section>
-        <section class="servicios-hero">
-            <img src="../img/main.jpg" alt="Imagen principal DER">
+        <section class="ingreso-producto">
+            <form id="formulario">
+                <div class="input-group mb-3">
+                    <label class="input-group-text" for="inputGroupSelect01">Producto:</label>
+                    <select class="form-select" id="nombres-productos">
+                      <option selected>Seleccione un producto...</option>
+                      <option>Cartel texto pasante</option>
+                      <option>Turnero</option>
+                      <option>Placa de desarrollo</option>
+                      <option>Dispenser automático</option>
+                      <option>Escaner</option>
+                      <option>Circuito impreso</option>
+                    </select>
+                </div>                
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Ingrese la cantidad:</label>
+                    <input type="number" class="form-control" id="cantidad" placeholder="">
+                </div>                
+                <div>                    
+                    <button type="button" class="btn btn-success" id="agregar">Agregar producto</button>
+                    <button type="submit" class="btn btn-success" id="eliminar">Eliminar presupuesto</button>
+                </div> 
+                <br>                   
+                <div id="mensajes-id"></div>            
+            </form>
         </section>
-        <section class="servicios-parrafos">
-            <h2>Ingeniería Electrónica (Digital y Analógica):</h2>
-            <div>
-                <p>Realizamos desarrollos electrónicos analógicos y digitales para empresas y perticulares. Según la
-                    necesidad del cliente, se plantea un esquema para la confección der una propuesta técnica-comercial
-                    para el diseño y desarrollo de la aplicación tecnológica.
-                </p>
-            </div>
-            <h2>Diseños de sistemas microcontrolados:</h2>
-            <div>
-                <p>Realizamos desarrollos con microcontroladores con arquitecturas de 8, 16 y 32 bits. Diseñamos
-                    software embebido para diferentes aplicaciones según la necesidad. Disponemos de un experimentado
-                    personal para resolver las más complejas situaciones que requieran implementación con
-                    microcontroladores y microprocesadores.
-                </p>
-            </div>
-            <h2>Diseño de circuitos impresos PCB:</h2>
-            <div>
-                <p>La empresa posee su departamento de diseño de circuitos impresos, el cual consta de personal con
-                    experiencia que utiliza las herramientas mas modernas y adecuadas para circuitos que incorporen
-                    desde los componentes mas básicos hasta CPLD, FPGA, microcontroladores y componentes de montaje
-                    superficial (SMD).
-                </p>
-            </div>
-            <h2>Investigación y desarrollo:</h2>
-            <div>
-                <p>Una gran parte del tiempo de trabajo es dedicado a la investigación y desarrollo (I+D) en diferentes
-                    sectores, donde se destaca la rama automotriz desarrollando equipos de diagnostico para proveer a
-                    los mecánicos herramientas que le permitan realizar reparaciones y puesta a punto de vehículos
-                    modernos eficazmente.
-                </p>
-            </div>
+        <section class="presupuesto">
+            <h2>Presupuesto:</h2>
+            <table class="table table-striped">                                
+                <thead>
+                  <tr>
+                    <th scope="col">Cantidad</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Precio de lista</th>
+                  </tr>
+                </thead>
+                <tbody id="presupuesto-tabla"></tbody>
+              </table>
+              <div class="presupuesto-total" id="presupuesto-total"></div>
         </section>
     </main>
     <footer class="pie">
@@ -106,6 +108,7 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous">
     </script>
+    <script src="../scripts/clases.js"></script>
+    <script src="../scripts/simulador.js"></script>
 </body>
-
 </html>

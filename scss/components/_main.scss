@@ -129,6 +129,23 @@
             margin: 10px;
         }
     }
+    div{        
+        a{
+            text-decoration: none;
+            margin: 20px;            
+            h2{
+                font-family: $fuente-principal;                
+                font-size: 24px;
+                text-align: center;                
+                font-weight: bold;
+                color: black;    
+                transition: 0.5s;
+                &:hover{
+                transform: scale(1.05);
+                }            
+            }
+        }
+    }
 }
 
 .productos{
@@ -227,6 +244,35 @@
         font-family: $fuente-principal;
         font-weight: bold;
         text-align: center;
+        font-size: 24px;
+        margin: 15px;
+    }    
+}
+
+/*-----PRESUPUESTADOR------*/
+.ingreso-producto{    
+    @include flex2(flex, center, center);
+    margin: 30px; 
+    form{
+        width: 500px;
+        div{
+            label{
+                font-family: $fuente-principal;
+            }
+            button {
+                font-family: $fuente-principal;
+            };
+        }
+    }
+}
+.presupuesto{
+    @include flex1(flex, column);    
+    align-items: start;
+    @include margins(100px, 100px, 50px, 100px);
+    h2{
+        font-family: $fuente-principal;
+        font-weight: normal;
+        text-align: left;
         font-size: 24px;
         margin: 15px;
     }    

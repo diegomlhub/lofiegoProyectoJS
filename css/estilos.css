@@ -182,6 +182,18 @@
     text-indent: 30px;
     font-size: 18px;
     margin: 10px; }
+  .productos-hero div a {
+    text-decoration: none;
+    margin: 20px; }
+    .productos-hero div a h2 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 24px;
+      text-align: center;
+      font-weight: bold;
+      color: black;
+      transition: 0.5s; }
+      .productos-hero div a h2:hover {
+        transform: scale(1.05); }
 
 .productos div {
   display: flex;
@@ -284,6 +296,34 @@
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
     text-align: center;
+    font-size: 24px;
+    margin: 15px; }
+
+/*-----PRESUPUESTADOR------*/
+.ingreso-producto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px; }
+  .ingreso-producto form {
+    width: 500px; }
+    .ingreso-producto form div label {
+      font-family: "Montserrat", sans-serif; }
+    .ingreso-producto form div button {
+      font-family: "Montserrat", sans-serif; }
+
+.presupuesto {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 50px;
+  margin-bottom: 100px; }
+  .presupuesto h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+    text-align: left;
     font-size: 24px;
     margin: 15px; }
 
