@@ -57,13 +57,7 @@
                 <div class="input-group mb-3">
                     <label class="input-group-text" for="inputGroupSelect01">Producto:</label>
                     <select class="form-select" id="nombres-productos">
-                      <option selected>Seleccione un producto...</option>
-                      <option>Cartel texto pasante</option>
-                      <option>Turnero</option>
-                      <option>Placa de desarrollo</option>
-                      <option>Dispenser automático</option>
-                      <option>Escaner</option>
-                      <option>Circuito impreso</option>
+                      <option selected>Seleccione un producto...</option>                      
                     </select>
                 </div>                
                 <div class="mb-3">
@@ -72,10 +66,8 @@
                 </div>                
                 <div>                    
                     <button type="button" class="btn btn-success" id="agregar">Agregar producto</button>
-                    <button type="submit" class="btn btn-success" id="eliminar">Eliminar presupuesto</button>
-                </div> 
-                <br>                   
-                <div id="mensajes-id"></div>            
+                    <button type="button" class="btn btn-success" id="eliminar">Eliminar presupuesto</button>
+                </div>                                 
             </form>
         </section>
         <section class="presupuesto">
@@ -104,11 +96,12 @@
         </div>
     </footer>
     <!--JS-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!--sweetalert-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous">
     </script>
     <script src="../scripts/clases.js"></script>
-    <script src="../scripts/simulador.js"></script>
+    <script src="../scripts/main.js"></script>
 </body>
 </html>

@@ -1,13 +1,13 @@
 <h1 align="center">Hi 👋, I'm Diego</h1>
 <h2 align="center">Proyecto Javascript Coderhouse</h2>
-<h3 align="left">Tercer Pre entrega - Simulador de calculo de presupuestos de productos</h3>
+<h3 align="left">Entrega Proyecto Final - Simulador de calculos de presupuestos de productos</h3>
 
 <p align="left">Interacción con con el usuario a traves de DOM.</p>
 <p align="left"> Calculo descuentos con pago de contado y calculos de cuotas con precio de lista.</p>
 
 <p align="left">Para ingresar al presupuestador, debemos ir al seccion "Productos" y alli encontraremos el link del presupuestador.</p>
 
-<p align="left">Para realizar el presupuesto, seleccionamos el producto de la lista desplegable, luego en el siguiente input ingresamos la cantidad. Hacemos click en agregar, veremos abajo la informacion y detalle de costo, descuentos y pagos del presupuesto en el html. Podemos ingresar otro producto y se va a sumar al presupuesto actual y tambien si se desea se puede elimnar el presupuesto completo haciendo click en "Eliminar Presupuesto".</p>
+<p align="left">Para realizar el presupuesto, seleccionamos el producto de la lista desplegable, luego en el siguiente input ingresamos la cantidad. Hacemos click en agregar, veremos abajo una lista con los productos seleccionados con su informacion y detalles de costo, descuentos y pagos del presupuesto. Podemos ingresar otro producto y se va a sumar al presupuesto actual. Si se desea se puede eliminar el presupuesto completo haciendo click en "Eliminar Presupuesto" (Mensaje de confirmacion).</p>
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">

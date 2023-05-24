@@ -1,0 +1,8 @@
+[
+    {"id":1,"nombre":"Cartel texto pasante","precio":35000,"stock":10},
+    {"id":2,"nombre":"Turnero","precio":24999.99,"stock":5},
+    {"id":3,"nombre":"Placa de desarrollo","precio":15000,"stock":16},
+    {"id":4,"nombre":"Dispenser automático","precio":23000,"stock":3},
+    {"id":5,"nombre":"Escaner","precio":64999.93,"stock":2},
+    {"id":6,"nombre":"Circuito impreso","precio":13999.96,"stock":50}
+]
