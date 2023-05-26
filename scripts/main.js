@@ -4,7 +4,7 @@ let precioContado;
 let precioCuotas;
 const validezPresupuesto = 5; //dias
 let fechaValidez;
-const fechaActual = new Date();
+let fechaActual = new Date();
 let precioTotal;
 const mensajeError1 = "Seleccione un producto o verifique que la cantidad sea mayor a cero.";
 const mensajeError2 = "No se logró ingresar el producto, intente nuevamente.";
@@ -111,12 +111,12 @@ function calcularPresupuesto() {
     fechaValidez = fechaActual.getDate() + validezPresupuesto;
 }
 
-function mostrarPresupuesto() {    
+function mostrarPresupuesto() {        
     return "<b><br> Precio de total: " + "$" + precioTotal.toFixed(2).toString() + ".- </b><br>" +        
         "6 cuotas sin interés de: $" + precioCuotas.toFixed(2).toString() + ".- <br>" +        
         "Precio final de contado (dto 15%): $" + precioContado.toFixed(2).toString() + ".- <br>" +
         "<br>" +
-        "Validéz de presupuesto hasta el: " + fechaValidez.toString() + "/" + fechaActual.getMonth().toString() + "/" + fechaActual.getFullYear().toString() + ".";    
+        "Validéz de presupuesto hasta el: " + fechaValidez.toString() + "/" + (fechaActual.getMonth() + 1).toString() + "/" + fechaActual.getFullYear().toString() + ".";  //Sumo 1 al mes ya que enero lo toma como 0  
 }
   
 // <-- eventos -->
